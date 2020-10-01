@@ -7,7 +7,7 @@ https://docs.google.com/document/d/1ZjJ51xik4TN6vsAq72jO13gJZnYDrqWSDPG_t3vfX0k/
 
 ## Overview of files
 
-- Background
+- Background: papers relevant to manuscript
 - Code
   - Preemie_meta.R: Sam's meta-analysis
   - Premie_graphs.R: Shoshana's trend graphs
