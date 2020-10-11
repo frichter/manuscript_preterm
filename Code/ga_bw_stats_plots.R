@@ -55,6 +55,26 @@ p
 ggsave('/Users/felixrichter/Dropbox/PhD/nicu_projects/manuscript_preterm/Figures/original/GA_rates.png', p,
        width = 10, height = 3)
 
+## line graphs
+
+p = count_df_for_plot %>% 
+  group_by(GA_category, Year) %>% 
+  mutate(median_by_yr = median(rate_per_1k)) %>% ungroup %>% 
+  mutate(median_by_yr = ifelse(BIRTH_YEAR == 2020, NA, median_by_yr)) %>% 
+  mutate(`Median rate` = ifelse(BIRTH_YEAR == 2020, NA, Year)) %>% 
+  ggplot(aes(x = BIRTH_YEAR, y= rate_per_1k)) +
+  geom_line() +
+  facet_wrap(~GA_category, scales='free', ncol=1) +
+  geom_hline(aes(yintercept=median_by_yr, color=`Median rate`)) +
+  ylab('Birth rate\n(per 1000 live singleton births)') + xlab('Year') +
+  scale_color_manual(values = c('red', 'red')) +
+  theme_classic() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+p
+ggsave('/Users/felixrichter/Dropbox/PhD/nicu_projects/manuscript_preterm/Figures/figure_components/GA_lineplot.png',
+       p, width = 6, height = 10)
+
+
 ## Calculate odds ratios and C.I.s
 or_df = count_df_for_plot %>% 
   group_by(GA_category, Year) %>%
@@ -185,4 +205,40 @@ p
 # monthly_ga.png monthly_bw.png
 ggsave('/Users/felixrichter/Dropbox/PhD/nicu_projects/manuscript_preterm/Figures/original/monthly_ga.png',
        p, width = 10, height = 2)
+
+########################################
+# Plot OR as a function of cut-off
+########################################
+
+count_df_ga = read_tsv('/Users/felixrichter/Dropbox/PhD/nicu_projects/manuscript_preterm/Data/ga_cut_off_counts.txt')
+# count_df_ga %<>% filter(GA_category != 'Not recorded')
+
+or_df = count_df_ga %>% 
+  mutate(below_ga_cutoff = ifelse(below_ga_cutoff, 'belowGA', 'aboveGA')) %>% 
+  gather(key='YEAR_2020', value = 'Births', -ga_cutoff, -below_ga_cutoff) %>% 
+  unite(col = 'group_i', below_ga_cutoff, YEAR_2020, sep='_') %>% 
+  spread(key = 'group_i', value='Births') %>% 
+  rowwise() %>% 
+  mutate(
+    fisher.p = fisher.test(cbind("2020" = c(belowGA_yr2020, aboveGA_yr2020),
+                                 "2012-2019" = c(belowGA_yr2012_2019, aboveGA_yr2012_2019)))$p.value,
+    ci_lo = fisher.test(cbind("2020" = c(belowGA_yr2020, aboveGA_yr2020),
+                              "2012-2019" = c(belowGA_yr2012_2019, aboveGA_yr2012_2019)))$conf.int[[1]],
+    ci_hi = fisher.test(cbind("2020" = c(belowGA_yr2020, aboveGA_yr2020),
+                              "2012-2019" = c(belowGA_yr2012_2019, aboveGA_yr2012_2019)))$conf.int[[2]],
+    or = (belowGA_yr2020/aboveGA_yr2020)/(belowGA_yr2012_2019/(aboveGA_yr2012_2019))) %>% ungroup
+
+p = or_df %>% 
+  filter(!(ga_cutoff %in% c(39))) %>% 
+  mutate(ga_cutoff = factor(ga_cutoff)) %>% 
+  mutate(`P-value` = ifelse(fisher.p < 0.006, '<0.006', '≥0.006')) %>% 
+  ggplot(aes(x = ga_cutoff, y = or, ymax = ci_hi, ymin = ci_lo, color = `P-value`)) +
+  geom_hline(yintercept = 1, color = "blue") +
+  geom_pointrange() +
+  scale_color_manual(values = c('red', 'black')) + 
+  xlab("GA cut-off") + ylab('Odds ratio with 95% C.I.') +
+  scale_y_continuous(trans = 'log2') +
+  theme_classic()
+p
+
 

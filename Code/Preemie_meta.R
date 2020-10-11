@@ -54,6 +54,18 @@ elbw_df = bind_rows(
 elbw_df
 ep_df
 
+ep_df %>% 
+  rename(n_cases_muts = Case_total, n_ctrl_muts = Ctrl_total) %>% 
+  rowwise() %>% 
+  mutate(
+    fisher.p = fisher.test(cbind("Case" = c(Case, n_cases_muts - Case),
+                                 "Ctrl" = c(Ctrl, n_ctrl_muts - Ctrl)))$p.value,
+    ci_lo = fisher.test(cbind("Case" = c(Case, n_cases_muts - Case),
+                              "Ctrl" = c(Ctrl, n_ctrl_muts - Ctrl)))$conf.int[[1]],
+    ci_hi = fisher.test(cbind("Case" = c(Case, n_cases_muts - Case),
+                              "Ctrl" = c(Ctrl, n_ctrl_muts - Ctrl)))$conf.int[[2]],
+    or = (Case/(n_cases_muts-Case))/(Ctrl/(n_ctrl_muts-Ctrl)),
+  ) %>% as.data.frame
 
 
 ##############################################

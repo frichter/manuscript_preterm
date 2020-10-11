@@ -1,0 +1,172 @@
+lockdown_group	GA_category	BIRTH_YEAR	Births
+lockdown	Extremely premature	2020	4
+lockdown	Late term	2020	1
+lockdown	Moderate/late premature	2020	102
+lockdown	Term	2020	1451
+lockdown	Very premature	2020	10
+precovid	Extremely premature	2020	3
+precovid	Late term	2020	2
+precovid	Moderate/late premature	2020	83
+precovid	Term	2020	1432
+precovid	Very premature	2020	5
+prioryears_lockdown	Extremely premature	2012	4
+prioryears_lockdown	Extremely premature	2014	6
+prioryears_lockdown	Extremely premature	2015	4
+prioryears_lockdown	Extremely premature	2016	7
+prioryears_lockdown	Extremely premature	2017	7
+prioryears_lockdown	Extremely premature	2018	7
+prioryears_lockdown	Extremely premature	2019	5
+prioryears_lockdown	Late term	2012	5
+prioryears_lockdown	Late term	2013	2
+prioryears_lockdown	Late term	2014	3
+prioryears_lockdown	Late term	2015	4
+prioryears_lockdown	Late term	2016	8
+prioryears_lockdown	Late term	2017	2
+prioryears_lockdown	Late term	2018	4
+prioryears_lockdown	Late term	2019	2
+prioryears_lockdown	Moderate/late premature	2012	70
+prioryears_lockdown	Moderate/late premature	2013	72
+prioryears_lockdown	Moderate/late premature	2014	92
+prioryears_lockdown	Moderate/late premature	2015	93
+prioryears_lockdown	Moderate/late premature	2016	102
+prioryears_lockdown	Moderate/late premature	2017	113
+prioryears_lockdown	Moderate/late premature	2018	88
+prioryears_lockdown	Moderate/late premature	2019	89
+prioryears_lockdown	Term	2012	1076
+prioryears_lockdown	Term	2013	1087
+prioryears_lockdown	Term	2014	1156
+prioryears_lockdown	Term	2015	1374
+prioryears_lockdown	Term	2016	1530
+prioryears_lockdown	Term	2017	1503
+prioryears_lockdown	Term	2018	1558
+prioryears_lockdown	Term	2019	1623
+prioryears_lockdown	Very premature	2012	10
+prioryears_lockdown	Very premature	2013	6
+prioryears_lockdown	Very premature	2014	11
+prioryears_lockdown	Very premature	2015	5
+prioryears_lockdown	Very premature	2016	12
+prioryears_lockdown	Very premature	2017	12
+prioryears_lockdown	Very premature	2018	5
+prioryears_lockdown	Very premature	2019	9
+prioryears_postcovid	Extremely premature	2012	4
+prioryears_postcovid	Extremely premature	2013	8
+prioryears_postcovid	Extremely premature	2014	8
+prioryears_postcovid	Extremely premature	2015	3
+prioryears_postcovid	Extremely premature	2016	8
+prioryears_postcovid	Extremely premature	2018	10
+prioryears_postcovid	Extremely premature	2019	6
+prioryears_postcovid	Late term	2012	8
+prioryears_postcovid	Late term	2013	5
+prioryears_postcovid	Late term	2014	4
+prioryears_postcovid	Late term	2015	4
+prioryears_postcovid	Late term	2016	3
+prioryears_postcovid	Late term	2017	5
+prioryears_postcovid	Late term	2018	2
+prioryears_postcovid	Late term	2019	2
+prioryears_postcovid	Moderate/late premature	2012	103
+prioryears_postcovid	Moderate/late premature	2013	89
+prioryears_postcovid	Moderate/late premature	2014	111
+prioryears_postcovid	Moderate/late premature	2015	76
+prioryears_postcovid	Moderate/late premature	2016	132
+prioryears_postcovid	Moderate/late premature	2017	111
+prioryears_postcovid	Moderate/late premature	2018	123
+prioryears_postcovid	Moderate/late premature	2019	120
+prioryears_postcovid	Term	2012	1531
+prioryears_postcovid	Term	2013	1524
+prioryears_postcovid	Term	2014	1645
+prioryears_postcovid	Term	2015	1667
+prioryears_postcovid	Term	2016	1898
+prioryears_postcovid	Term	2017	1932
+prioryears_postcovid	Term	2018	1975
+prioryears_postcovid	Term	2019	2013
+prioryears_postcovid	Very premature	2012	13
+prioryears_postcovid	Very premature	2013	8
+prioryears_postcovid	Very premature	2014	10
+prioryears_postcovid	Very premature	2015	4
+prioryears_postcovid	Very premature	2016	10
+prioryears_postcovid	Very premature	2017	2
+prioryears_postcovid	Very premature	2018	12
+prioryears_postcovid	Very premature	2019	10
+prioryears_precovid	Extremely premature	2012	7
+prioryears_precovid	Extremely premature	2013	6
+prioryears_precovid	Extremely premature	2014	10
+prioryears_precovid	Extremely premature	2015	6
+prioryears_precovid	Extremely premature	2016	2
+prioryears_precovid	Extremely premature	2017	5
+prioryears_precovid	Extremely premature	2018	3
+prioryears_precovid	Extremely premature	2019	4
+prioryears_precovid	Late term	2012	8
+prioryears_precovid	Late term	2013	5
+prioryears_precovid	Late term	2014	1
+prioryears_precovid	Late term	2015	3
+prioryears_precovid	Late term	2017	1
+prioryears_precovid	Late term	2018	1
+prioryears_precovid	Late term	2019	1
+prioryears_precovid	Moderate/late premature	2012	61
+prioryears_precovid	Moderate/late premature	2013	56
+prioryears_precovid	Moderate/late premature	2014	59
+prioryears_precovid	Moderate/late premature	2015	95
+prioryears_precovid	Moderate/late premature	2016	63
+prioryears_precovid	Moderate/late premature	2017	97
+prioryears_precovid	Moderate/late premature	2018	88
+prioryears_precovid	Moderate/late premature	2019	86
+prioryears_precovid	Term	2012	928
+prioryears_precovid	Term	2013	1052
+prioryears_precovid	Term	2014	1082
+prioryears_precovid	Term	2015	1125
+prioryears_precovid	Term	2016	1212
+prioryears_precovid	Term	2017	1339
+prioryears_precovid	Term	2018	1400
+prioryears_precovid	Term	2019	1378
+prioryears_precovid	Very premature	2012	3
+prioryears_precovid	Very premature	2013	1
+prioryears_precovid	Very premature	2014	15
+prioryears_precovid	Very premature	2015	7
+prioryears_precovid	Very premature	2016	1
+prioryears_precovid	Very premature	2017	8
+prioryears_precovid	Very premature	2018	1
+prioryears_precovid	Very premature	2019	10
+prioryears_reopening	Extremely premature	2012	6
+prioryears_reopening	Extremely premature	2013	5
+prioryears_reopening	Extremely premature	2014	4
+prioryears_reopening	Extremely premature	2015	11
+prioryears_reopening	Extremely premature	2016	9
+prioryears_reopening	Extremely premature	2017	5
+prioryears_reopening	Extremely premature	2018	7
+prioryears_reopening	Extremely premature	2019	5
+prioryears_reopening	Late term	2012	5
+prioryears_reopening	Late term	2013	8
+prioryears_reopening	Late term	2014	3
+prioryears_reopening	Late term	2015	6
+prioryears_reopening	Late term	2016	3
+prioryears_reopening	Late term	2017	2
+prioryears_reopening	Late term	2018	4
+prioryears_reopening	Moderate/late premature	2012	96
+prioryears_reopening	Moderate/late premature	2013	84
+prioryears_reopening	Moderate/late premature	2014	126
+prioryears_reopening	Moderate/late premature	2015	116
+prioryears_reopening	Moderate/late premature	2016	140
+prioryears_reopening	Moderate/late premature	2017	123
+prioryears_reopening	Moderate/late premature	2018	129
+prioryears_reopening	Moderate/late premature	2019	123
+prioryears_reopening	Term	2012	1403
+prioryears_reopening	Term	2013	1622
+prioryears_reopening	Term	2014	1701
+prioryears_reopening	Term	2015	1762
+prioryears_reopening	Term	2016	1981
+prioryears_reopening	Term	2017	1930
+prioryears_reopening	Term	2018	2072
+prioryears_reopening	Term	2019	2032
+prioryears_reopening	Very premature	2012	14
+prioryears_reopening	Very premature	2013	8
+prioryears_reopening	Very premature	2014	6
+prioryears_reopening	Very premature	2015	10
+prioryears_reopening	Very premature	2016	6
+prioryears_reopening	Very premature	2017	14
+prioryears_reopening	Very premature	2018	13
+prioryears_reopening	Very premature	2019	7
+reopening	Extremely premature	2020	1
+reopening	Late term	2020	2
+reopening	Moderate/late premature	2020	99
+reopening	Term	2020	1899
+reopening	Very premature	2020	4
