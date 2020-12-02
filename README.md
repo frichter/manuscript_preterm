@@ -21,8 +21,8 @@ https://docs.google.com/document/d/1ZjJ51xik4TN6vsAq72jO13gJZnYDrqWSDPG_t3vfX0k/
 ## Data processing pipeline
 
 1. **General neonatal data cleaning:** (all files in /data_drive/felix_richter/clarity_preprocessing/)
-  1. prod_sql/: pulls relevant Clarity data
-  2. prod_preprocess/merge_data.py: calls class from pat_db.py and helper functions from joint_functions.py to create a merged dataframe that serves as the starting point for all neonatal projects
+    - prod_sql/: pulls relevant Clarity data
+    - prod_preprocess/merge_data.py: calls class from pat_db.py and helper functions from joint_functions.py to create a merged dataframe that serves as the starting point for all neonatal projects
 2. **Prematurity data cleaning:** /data_drive/felix_richter/manuscript_preterm_code/preterm_df_prep.ipynb: initial data cleaning
-  - Not uploaded to github bc jupyter notebooks display MRNs
+    - Not uploaded to github bc jupyter notebooks display MRNs
 3. **DiD count prep:** rdd_did_counts_prep.ipynb: prepare data for diff in diff analysis
